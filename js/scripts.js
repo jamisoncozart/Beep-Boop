@@ -21,13 +21,17 @@ function createOutput(input) {
     var listString = "";
     for(let i = 0; i <= input; i++) {
       if(i === input) {
-        if(containsNumber(i, "2")) {
+        if(containsNumber(i, "3")) {
+          listString += "I'm sorry, Dave. I'm afraid I can't do that."
+        } else if(containsNumber(i, "2")) {
           listString += "Boop!";
         } else if(containsNumber(i, "1")) {
           listString += "Beep!";
         } else {
           listString += i;
         }
+      } else if(containsNumber(i, "3")) {
+        listString += "I'm sorry, Dave. I'm afraid I can't do that., "
       } else if(containsNumber(i, "2")) {
         listString += "Boop!, ";
       } else if(containsNumber(i, "1")) {
