@@ -1,6 +1,5 @@
 //===================================================
 //Front-End Logic
-//---------------------------------------------------
 
 //Runs all front-end logic once page has loaded.
 $(document).ready(function() {
@@ -13,7 +12,6 @@ $(document).ready(function() {
 
 //===================================================
 //Back-End Logic
-//---------------------------------------------------
 
 //checks if input is a number, then calls createNumList() to generate number list output.
 function createOutput(input) {

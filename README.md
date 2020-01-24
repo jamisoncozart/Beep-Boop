@@ -40,6 +40,9 @@ _Takes a user input number and displays a list of numbers up to the given number
 | If listed number contains a "1", replace all digits with "Beep!" | "5"      |    "0, Beep!, 2, 3, 4, 5" |
 | If listed number contains a "2", replace all digits with "Boop!" | "5"      |    "0, Beep!, Boop!, 3, 4, 5" |
 | If listed number contains a "3", replace all digits with "I'm sorry, Dave. I'm afraid I can't do that." | "5"      |    "0, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., 4, 5" |
+| If listed number is "13", replace all digits with "I'm sorry, Dave. I'm afraid I can't do that." | "13"      |    "0, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that." |
+| If listed number is "21", replace all digits with "Boop!" | "21"      |    "0, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Boop!, Boop!" |
+| If listed number is "32", replace all digits with "I'm sorry, Dave. I'm afraid I can't do that." | "32"      |    "0, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Boop!, Boop!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., Boop!, Boop!, Boop!, Boop!, Boop!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., I'm sorry, Dave. I'm afraid I can't do that., I'm sorry, Dave. I'm afraid I can't do that." |
 
 ## Technologies Used
 
