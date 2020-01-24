@@ -16,6 +16,12 @@ _Takes a user input number and displays a list of numbers up to the given number
     ```
     git clone https://github.com/jamisoncozart/Beep-Boop
     ```
+
+3. Change into project directory
+    ```
+    cd beep-boop
+    ```
+
 2. Open working directory in Visual Studio Code or preferred text editor:
     ```
     code .
