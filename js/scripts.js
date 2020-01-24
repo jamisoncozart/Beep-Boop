@@ -21,11 +21,15 @@ function createOutput(input) {
     var listString = "";
     for(let i = 0; i <= input; i++) {
       if(i === input) {
-        if(containsNumber(i, "1")) {
-          listString += "Beep!"
+        if(containsNumber(i, "2")) {
+          listString += "Boop!";
+        } else if(containsNumber(i, "1")) {
+          listString += "Beep!";
         } else {
           listString += i;
         }
+      } else if(containsNumber(i, "2")) {
+        listString += "Boop!, ";
       } else if(containsNumber(i, "1")) {
         listString += "Beep!, ";
       } else {
@@ -38,7 +42,7 @@ function createOutput(input) {
   }
 }
 
-//converts number input to string and returns true if it contains a "1", else returns false.
+//checks if any character of input contains checkNumberString and returns a boolean.
 function containsNumber(input, checkNumberString) {
   var numString = input.toString();
   for(let i = 0; i < numString.length; i++) {
