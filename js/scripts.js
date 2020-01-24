@@ -15,35 +15,33 @@ $(document).ready(function() {
 //Back-End Logic
 //---------------------------------------------------
 
-//creates output based on conditionals and returns output string.
+//checks if input is a number, then calls createNumList() to generate number list output.
 function createOutput(input) {
   if(Number.isInteger(input)) {
-    var listString = "";
-    for(let i = 0; i <= input; i++) {
-      if(i === input) {
-        if(containsNumber(i, "3")) {
-          listString += "I'm sorry, Dave. I'm afraid I can't do that."
-        } else if(containsNumber(i, "2")) {
-          listString += "Boop!";
-        } else if(containsNumber(i, "1")) {
-          listString += "Beep!";
-        } else {
-          listString += i;
-        }
-      } else if(containsNumber(i, "3")) {
-        listString += "I'm sorry, Dave. I'm afraid I can't do that., "
-      } else if(containsNumber(i, "2")) {
-        listString += "Boop!, ";
-      } else if(containsNumber(i, "1")) {
-        listString += "Beep!, ";
-      } else {
-        listString += (i + ", ");
-      }
-    }
-    return listString;
+    return createNumList(input);
   } else {
     return "Error: Please enter a number";
   }
+}
+
+//creates the number list string and returns it.
+function createNumList(input) {
+  var numList = "";
+  for(let i = 0; i <= input; i++) {
+    if(containsNumber(i, "3")) {
+      numList += "I'm sorry, Dave. I'm afraid I can't do that.";
+    } else if(containsNumber(i, "2")) {
+      numList += "Boop!";
+    } else if(containsNumber(i, "1")) {
+      numList += "Beep!";
+    } else {
+      numList += i;
+    }
+    if(i !== input) {
+      numList += ", ";
+    }
+  }
+  return numList;
 }
 
 //checks if any character of input contains checkNumberString and returns a boolean.
