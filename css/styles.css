@@ -5,17 +5,29 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-image: url(../img/background.jpg);
+  background-size: fill;
 }
 
 .container {
   text-align: center;
   width: 50%;
+  margin-top: 10vh;
+  padding: 20px;
+  background-color: #111;
+  border-radius: 10px;
+  color: #fff;
 }
 
 h1 {
   font-size: 60px;
   font-weight: bold;
   margin-bottom: 30px;
+}
+
+.well {
+  background-color: #333;
+  border-radius: 10px;
 }
 
 /* Form Styling */
@@ -35,6 +47,7 @@ form h2 {
 
 form input {
   padding: 5px 10px;
+  border-radius: 10px;
 }
 
 form button, form input {
@@ -49,4 +62,51 @@ form button, form input {
 
 #output {
   font-size: 20px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+  background-color: #111;
+  color: #fff;
+}
+
+@media screen and (max-width: 1160px) {
+  .container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .container {
+    width: 100%;
+    margin-top: 5vh;
+  }
+}
+@media screen and (max-width: 570px) {
+  h1 {
+    margin: 0 0 10px 0;
+  }
+  .container {
+    margin-top: 4vh;
+  }
+  form {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 390px) {
+  h1 {
+    margin: 10px 0;
+  }
+  form {
+    width: 100%;
+  }
+  .container {
+    margin-top: 4vh;
+  }
 }
