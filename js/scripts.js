@@ -6,7 +6,13 @@ $(document).ready(function() {
   $("#form").submit(function(event) {
     event.preventDefault();
     var input = parseInt($("#userInput").val());
-    $("#output").text(createOutput(input));
+    if(input === 2001) {
+      $(".container").hide();
+      $("#footer").hide();
+      $("#secret").show();
+    } else {
+      $("#output").text(createOutput(input));
+    }
   })
 })
 

@@ -48,6 +48,8 @@ form h2 {
 form input {
   padding: 5px 10px;
   border-radius: 10px;
+  color: #000;
+  text-align: center;
 }
 
 form button, form input {
@@ -77,6 +79,22 @@ footer {
   color: #fff;
 }
 
+#secret {
+  display: none;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/secret.jpg");
+  background-size: fill;
+  color: #fff;
+  text-align: center;
+}
+
+#secret h1 {
+  margin: 0;
+}
+
+/* Media Queries */
 @media screen and (max-width: 1160px) {
   .container {
     width: 80%;
@@ -97,6 +115,9 @@ footer {
   }
   form {
     width: 80%;
+  }
+  #secret h1 {
+    padding-top: 40px;
   }
 }
 @media screen and (max-width: 390px) {
