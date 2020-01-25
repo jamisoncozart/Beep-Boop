@@ -8,6 +8,8 @@
 
 _Takes a user input number and displays a list of numbers up to the given number. Numbers with a "1" in them will be replaced by "Beep!", numbers with a "2" replaced by "Boop!", and numbers with a "3" replaced by "I'm sorry, Dave. I'm aftraid I can't do that". Uses looping and conditional statements to display the desired outputs to the user._
 
+_The live page can be viewed on [GitHub Pages](https://jamisoncozart.github.io/Beep-Boop/)_
+
 ## Setup/Installation Requirements
 
 **Option 1:**
